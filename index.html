@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALOTO Prediction Pro — private football prediction leagues</title>
+<meta name="description" content="Run a football score prediction league for your mates, your office or your family. Join by code, predict the scores, and let the app do the maths every week.">
+<meta property="og:title" content="ALOTO Prediction Pro">
+<meta property="og:description" content="A private football score prediction league for you and your mates. Join by code, no public leaderboards.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0C3B2C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="markings" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="masthead">
+      <a class="wordmark" href="/">ALOTO Prediction <span class="pro">PRO</span></a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#scoring">Scoring</a>
+        <a href="#pricing">Free &amp; Pro</a>
+        <a href="/support">Support</a>
+      </nav>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Private prediction leagues</p>
+        <h1>Predict the scores. <em>Settle it properly.</em></h1>
+        <p class="lede">ALOTO Prediction Pro runs the football prediction league you've been keeping in a spreadsheet. Set it up, share a join code, and it does the maths every week — results, tables, cups and all.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://aloto-prediction-pro.netlify.app">Open the web app</a>
+          <!-- Swap href for the App Store link once the listing is live -->
+          <a class="btn btn-ghost" href="#pricing">For iPhone <small>Coming soon</small></a>
+        </div>
+      </div>
+
+      <div class="coupon" id="coupon">
+        <div class="coupon-head">
+          <span>Gameweek 12</span>
+          <span>Sat 15:00</span>
+        </div>
+
+        <div class="coupon-labels">
+          <span>Fixture</span><span>Your pick</span><span>Result</span><span>Pts</span>
+        </div>
+
+        <div class="fixture" data-hit="exact">
+          <div class="teams"><b>Arsenal</b><i>v</i><b>Chelsea</b></div>
+          <div class="pick">2–1</div>
+          <div class="actual reveal">2–1</div>
+          <div class="pts reveal">5</div>
+        </div>
+
+        <div class="fixture" data-hit="result">
+          <div class="teams"><b>Everton</b><i>v</i><b>Brentford</b></div>
+          <div class="pick">1–1</div>
+          <div class="actual reveal">0–0</div>
+          <div class="pts reveal">2</div>
+        </div>
+
+        <div class="fixture" data-hit="miss">
+          <div class="teams"><b>Spurs</b><i>v</i><b>Newcastle</b></div>
+          <div class="pick">0–2</div>
+          <div class="actual reveal">3–1</div>
+          <div class="pts reveal">0</div>
+        </div>
+
+        <div class="coupon-total">
+          <span>Gameweek total</span>
+          <strong id="total">0</strong>
+        </div>
+
+        <p class="coupon-note">Right result, 2 points. Right score, 5. Everyone's picks stay hidden until kick-off.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="tour" id="how">
+    <div class="wrap">
+      <div class="tour-intro rise">
+        <p class="eyebrow">Watch a season come together</p>
+        <h2>Five steps from an empty screen to a settled argument</h2>
+      </div>
+
+      <div class="tour-grid">
+        <div class="tour-steps">
+        <article class="tour-step" data-step="0">
+          <span class="tour-num">01</span>
+          <h3>Create the competition</h3>
+          <p>Pick a format, give it a name, and you become its admin. League competitions hold the points rules; cups and tournaments borrow theirs from a league you already run.</p>
+        </article>
+        <article class="tour-step" data-step="1">
+          <span class="tour-num">02</span>
+          <h3>Share the join code</h3>
+          <p>Every competition gets its own code. Paste it into the group chat and that is the whole invitation. Without it, nobody can find the competition, let alone join it.</p>
+        </article>
+        <article class="tour-step" data-step="2">
+          <span class="tour-num">03</span>
+          <h3>Build the gameweek</h3>
+          <p>Add the fixtures you want to cover and set the kick-off times. Each fixture locks at its own kick-off, so a Friday night game closes while Saturday's are still open.</p>
+        </article>
+        <article class="tour-step" data-step="3">
+          <span class="tour-num">04</span>
+          <h3>Everyone predicts</h3>
+          <p>Players put a score against every fixture. Predictions save as they go, and stay hidden from everyone else — the admin included — until the match starts.</p>
+        </article>
+        <article class="tour-step" data-step="4">
+          <span class="tour-num">05</span>
+          <h3>The table takes shape</h3>
+          <p>Enter the results and the maths happens on its own: points, full-house bonuses, Triple Points, the running table, the monthly winner, and any cup tie riding on that gameweek.</p>
+        </article>
+        </div>
+
+        <div class="tour-visual">
+          <div class="frame">
+            <div class="frame-bar">
+              <i></i><i></i><i></i>
+              <span class="frame-url">app.alotopredictionpro.co.uk</span>
+            </div>
+            <div class="frame-screens" id="screens">
+            <img src="assets/screen-01.svg" alt="Creating a new competition and choosing its format" class="on">
+            <img src="assets/screen-02.svg" alt="The join code screen with the code and player list">
+            <img src="assets/screen-03.svg" alt="Adding fixtures and kick-off times to a gameweek">
+            <img src="assets/screen-04.svg" alt="Entering score predictions for the active gameweek">
+            <img src="assets/screen-05.svg" alt="The standings table after a gameweek has been scored">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formats">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">Three ways to run it</p>
+        <h2>A season, a cup, or both at once</h2>
+        <p>Every competition is separate, and you can run as many as your group has appetite for.</p>
+      </div>
+
+      <div class="formats">
+        <div class="format">
+          <span class="tag">League</span>
+          <h3>The long game</h3>
+          <p>Weekly gameweeks feeding a running points table, with a monthly winner declared alongside the overall standings. This is where your scoring rules live.</p>
+        </div>
+        <div class="format">
+          <span class="tag">Knockout</span>
+          <h3>Head to head</h3>
+          <p>Players are drawn against each other and the higher gameweek score goes through. Level on points means a replay. Cup upsets are the whole point.</p>
+        </div>
+        <div class="format">
+          <span class="tag">Group + Knockout</span>
+          <h3>Tournament format</h3>
+          <p>A round-robin group stage over several gameweeks, then the top players carry into a bracket. Best suited to a Euros or World Cup summer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="board" id="scoring">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">Scoring</p>
+        <h2>Getting close counts. Getting it exactly right counts more.</h2>
+        <p>These are the defaults. Admins can change the values to suit their group.</p>
+      </div>
+
+      <div class="rules">
+        <div class="rule">
+          <div class="value">2</div>
+          <div>
+            <h3>Correct result</h3>
+            <p>You called the home win, away win or draw.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <div class="value">5</div>
+          <div>
+            <h3>Exact score</h3>
+            <p>The result, plus a 3-point bonus for nailing the scoreline.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <div class="value">+15</div>
+          <div>
+            <h3>Full house on results</h3>
+            <p>Every result in the gameweek correct. You need a prediction on every fixture to qualify.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <div class="value">+30</div>
+          <div>
+            <h3>Full house on scores</h3>
+            <p>Every scoreline in the gameweek exact. Rare enough to be worth talking about for years.</p>
+          </div>
+        </div>
+        <div class="rule">
+          <div class="value">×3</div>
+          <div>
+            <h3>Triple Points</h3>
+            <p>Two chips a season — one before New Year, one after. Triples everything you score that gameweek, as long as you've predicted every fixture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="private">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">Private by design</p>
+        <h2>Your league, nobody else's business</h2>
+      </div>
+
+      <div class="private-grid">
+        <div>
+          <h3>Join by code only</h3>
+          <p>There is no public directory and no browsing other people's competitions. If you weren't sent the code, you can't get in.</p>
+        </div>
+        <div>
+          <h3>No global leaderboard</h3>
+          <p>You're not ranked against strangers. The only table that exists is the one with your mates in it.</p>
+        </div>
+        <div>
+          <h3>Picks hidden until kick-off</h3>
+          <p>Nobody can see what anyone else has gone for until the match starts. No copying, no late tactical changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">Free &amp; Pro</p>
+        <h2>Players never pay. Ever.</h2>
+        <p>If you've been invited to a league, the app is free and always will be. Pro is an upgrade for the person running things, and it applies to every competition they set up.</p>
+      </div>
+
+      <div class="pricing">
+        <div class="plan">
+          <h3>Free</h3>
+          <span class="price">£0</span>
+          <ul>
+            <li>Unlimited league competitions</li>
+            <li>Unlimited players and gameweeks</li>
+            <li>Full points table and monthly winners</li>
+            <li>Prediction reminders before kick-off</li>
+            <li>One cup competition</li>
+            <li>One final-table prediction</li>
+          </ul>
+          <p class="footnote">Everything a group needs for a normal season.</p>
+        </div>
+
+        <div class="plan pro">
+          <h3>Pro — admin only</h3>
+          <span class="price">One unlock</span>
+          <ul>
+            <li>Everything in Free</li>
+            <li>As many cup competitions as you like</li>
+            <li>As many final-table predictions as you like</li>
+            <li>Run a league, a cup and a tournament side by side</li>
+          </ul>
+          <p class="footnote">Bought once by the admin. Everyone in their competitions gets the benefit without paying anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <h2>Start a league before the weekend</h2>
+      <p>Takes about five minutes to set up. The arguments last considerably longer.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://aloto-prediction-pro.netlify.app">Open the web app</a>
+        <a class="btn btn-ghost" href="/support">Read the guide</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="wordmark" href="/">ALOTO Prediction <span class="pro">PRO</span></a>
+    <nav>
+      <a href="/privacy">Privacy</a>
+      <a href="/support">Support</a>
+      <a href="https://aloto-prediction-pro.netlify.app">Open the app</a>
+      <a href="mailto:support@alotopredictionpro.co.uk">support@alotopredictionpro.co.uk</a>
+    </nav>
+    <span>© 2026 ALOTO Prediction Pro</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* hero coupon: picks land, then results, then the points tot up */
+  var total = document.getElementById("total");
+  var reveals = document.querySelectorAll("#coupon .reveal");
+
+  if (reduce) {
+    reveals.forEach(function (el) { el.classList.add("on"); });
+    total.textContent = "7";
+  } else {
+    var running = [5, 7, 7];
+    var i = 0;
+    (function next() {
+      if (i >= 3) return;
+      reveals[i * 2].classList.add("on");
+      reveals[i * 2 + 1].classList.add("on");
+      total.textContent = running[i];
+      i++;
+      setTimeout(next, 700);
+    })();
+  }
+
+  /* the tour: whichever step sits in the middle of the screen drives the screenshot */
+  var steps = document.querySelectorAll(".tour-step");
+  var screens = document.querySelectorAll("#screens img");
+
+  if (steps.length && "IntersectionObserver" in window) {
+    var show = function (n) {
+      steps.forEach(function (s, i) { s.classList.toggle("on", i === n); });
+      screens.forEach(function (img, i) { img.classList.toggle("on", i === n); });
+    };
+
+    var stepObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) show(+e.target.dataset.step);
+      });
+    }, { rootMargin: "-45% 0px -45% 0px", threshold: 0 });
+
+    steps.forEach(function (s) { stepObserver.observe(s); });
+    show(0);
+  } else {
+    steps.forEach(function (s) { s.classList.add("on"); });
+  }
+
+  /* section headings ease in once */
+  var rises = document.querySelectorAll(".rise");
+  if ("IntersectionObserver" in window) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.15 });
+    rises.forEach(function (el) { ro.observe(el); });
+  } else {
+    rises.forEach(function (el) { el.classList.add("in"); });
+  }
+})();
+</script>
+
+</body>
+</html>

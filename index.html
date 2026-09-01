@@ -24,10 +24,10 @@
     <div class="masthead">
       <a class="wordmark" href="/">ALOTO Prediction <span class="pro">PRO</span></a>
       <nav>
-        <a href="#how">How it works</a>
+        <a href="#how">The tour</a>
         <a href="#scoring">Scoring</a>
         <a href="#pricing">Free &amp; Pro</a>
-        <a href="/support">Support</a>
+        <a href="#faq">Questions</a>
       </nav>
     </div>
 
@@ -39,7 +39,7 @@
         <div class="cta-row">
           <a class="btn" href="https://aloto-prediction-pro.netlify.app">Open the web app</a>
           <!-- Swap href for the App Store link once the listing is live -->
-          <a class="btn btn-ghost" href="#pricing">For iPhone <small>Coming soon</small></a>
+          <a class="btn btn-ghost" href="#signup">For iPhone <small>Coming soon</small></a>
         </div>
       </div>
 
@@ -87,11 +87,35 @@
 
 <main>
 
+  <section class="why">
+    <div class="wrap why-grid">
+      <div class="rise">
+        <p class="eyebrow">Why it exists</p>
+        <h2>It started as a spreadsheet, the way these things always do</h2>
+      </div>
+      <div class="why-body rise">
+        <p>Every group has one. A tab per gameweek, a formula somebody wrote in 2019 that nobody dares touch, and one person doing the sums on a Sunday night while everyone else waits to find out whether they've gone up or down.</p>
+        <p>And every group has the other thing too — the argument. Somebody swears blind they said 2–1. There's no record. It gets settled by whoever shouts longest.</p>
+        <p class="why-pull">The app is just the spreadsheet, minus the Sunday night, minus the arguing.</p>
+        <p>Predictions are timestamped and locked at kick-off, so what you said is what you said. The maths happens the moment results go in. And because a competition is joined by code and shows up nowhere else, it stays what it always was: <strong>your lot, and nobody else.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band-grid">
+      <div class="rise"><span class="n">2</span><p>points for calling the result</p></div>
+      <div class="rise"><span class="n">5</span><p>for getting the score spot on</p></div>
+      <div class="rise"><span class="n">60s</span><p>of admin a week, once results are out</p></div>
+      <div class="rise"><span class="n">0</span><p>public leaderboards, now or ever</p></div>
+    </div>
+  </section>
+
   <section class="tour" id="how">
     <div class="wrap">
       <div class="tour-intro rise">
         <p class="eyebrow">Watch a season come together</p>
-        <h2>Five steps from an empty screen to a settled argument</h2>
+        <h2>From an empty screen to a settled argument</h2>
       </div>
 
       <div class="tour-grid">
@@ -118,23 +142,73 @@
         </article>
         <article class="tour-step" data-step="4">
           <span class="tour-num">05</span>
-          <h3>The table takes shape</h3>
-          <p>Enter the results and the maths happens on its own: points, full-house bonuses, Triple Points, the running table, the monthly winner, and any cup tie riding on that gameweek.</p>
+          <h3>Results go in</h3>
+          <p>You enter the final scores. That's the only admin job during the week, and it takes about a minute. Get one wrong and you can correct it; everything recalculates from scratch.</p>
+        </article>
+        <article class="tour-step" data-step="5">
+          <span class="tour-num">06</span>
+          <h3>The table settles</h3>
+          <p>Points, full-house bonuses, Triple Points, the running order and the monthly winner all land at once. Nobody adds anything up, and nobody argues about the arithmetic.</p>
+        </article>
+        <article class="tour-step" data-step="6">
+          <span class="tour-num">07</span>
+          <h3>The cup runs alongside</h3>
+          <p>Head-to-head ties drawn on the same gameweek scores. Level on points means a replay. It gives the players having a bad season something to still be in.</p>
         </article>
         </div>
 
         <div class="tour-visual">
-          <div class="frame">
-            <div class="frame-bar">
-              <i></i><i></i><i></i>
-              <span class="frame-url">app.alotopredictionpro.co.uk</span>
-            </div>
-            <div class="frame-screens" id="screens">
-            <img src="assets/screen-01.png" alt="Creating a new competition and choosing its format" class="on">
-            <img src="assets/screen-02.png" alt="The join code screen with the code and player list">
-            <img src="assets/screen-03.png" alt="Adding fixtures and kick-off times to a gameweek">
-            <img src="assets/screen-04.png" alt="Entering score predictions for the active gameweek">
-            <img src="assets/screen-05.png" alt="The standings table after a gameweek has been scored">
+          <div class="stage">
+            <div class="deck" id="deck">
+              <div class="pane">
+                <div class="frame-bar">
+                  <i></i><i></i><i></i>
+                  <span class="frame-url">app.alotopredictionpro.co.uk/admin/competitions</span>
+                </div>
+                <img src="assets/screen-01.svg" alt="Creating a new competition and choosing its format">
+              </div>
+              <div class="pane">
+                <div class="frame-bar">
+                  <i></i><i></i><i></i>
+                  <span class="frame-url">app.alotopredictionpro.co.uk/join</span>
+                </div>
+                <img src="assets/screen-02.svg" alt="The join code screen with the code and player list">
+              </div>
+              <div class="pane">
+                <div class="frame-bar">
+                  <i></i><i></i><i></i>
+                  <span class="frame-url">app.alotopredictionpro.co.uk/admin/gameweeks</span>
+                </div>
+                <img src="assets/screen-03.svg" alt="Adding fixtures and kick-off times to a gameweek">
+              </div>
+              <div class="pane">
+                <div class="frame-bar">
+                  <i></i><i></i><i></i>
+                  <span class="frame-url">app.alotopredictionpro.co.uk/predict</span>
+                </div>
+                <img src="assets/screen-04.svg" alt="Entering score predictions for the active gameweek">
+              </div>
+              <div class="pane">
+                <div class="frame-bar">
+                  <i></i><i></i><i></i>
+                  <span class="frame-url">app.alotopredictionpro.co.uk/admin/results</span>
+                </div>
+                <img src="assets/screen-05.svg" alt="An admin entering the final scores for a gameweek">
+              </div>
+              <div class="pane">
+                <div class="frame-bar">
+                  <i></i><i></i><i></i>
+                  <span class="frame-url">app.alotopredictionpro.co.uk/table</span>
+                </div>
+                <img src="assets/screen-06.svg" alt="The standings table after a gameweek has been scored">
+              </div>
+              <div class="pane">
+                <div class="frame-bar">
+                  <i></i><i></i><i></i>
+                  <span class="frame-url">app.alotopredictionpro.co.uk/cup</span>
+                </div>
+                <img src="assets/screen-07.svg" alt="A cup bracket with ties drawn on gameweek points">
+              </div>
             </div>
           </div>
         </div>
@@ -165,6 +239,49 @@
           <span class="tag">Group + Knockout</span>
           <h3>Tournament format</h3>
           <p>A round-robin group stage over several gameweeks, then the top players carry into a bracket. Best suited to a Euros or World Cup summer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inside">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">What's in it</p>
+        <h2>The bits that used to be your job</h2>
+        <p>None of this is configuration you have to think about. It's what the app does once the fixtures are in.</p>
+      </div>
+
+      <div class="inside">
+        <div>
+          <span class="mark">✦</span>
+          <h3>Gameweeks that lock themselves</h3>
+          <p>Each fixture closes at its own kick-off. No deadline to police, no messages asking if you can squeeze one in late.</p>
+        </div>
+        <div>
+          <span class="mark">✦</span>
+          <h3>A table that keeps itself</h3>
+          <p>Points, exact scores, correct results and position, updated the moment a result lands. Monthly standings sit alongside the overall.</p>
+        </div>
+        <div>
+          <span class="mark">✦</span>
+          <h3>Cups and brackets</h3>
+          <p>Knockout ties drawn on gameweek points, replays when players tie, and group stages if you want a tournament shape.</p>
+        </div>
+        <div>
+          <span class="mark">✦</span>
+          <h3>Triple Points</h3>
+          <p>Two chips a season, one either side of New Year. The gamble that turns a quiet December into a comeback.</p>
+        </div>
+        <div>
+          <span class="mark">✦</span>
+          <h3>Monthly winners</h3>
+          <p>Close a month and the standings lock. Somebody wins something even when the title race is long gone.</p>
+        </div>
+        <div>
+          <span class="mark">✦</span>
+          <h3>Reminders before kick-off</h3>
+          <p>A nudge when a gameweek opens, then 24 hours and one hour before — and only if you've still got predictions outstanding.</p>
         </div>
       </div>
     </div>
@@ -280,13 +397,78 @@
     </div>
   </section>
 
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">Before you start one</p>
+        <h2>The things people ask first</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq">
+          <summary>Does everyone have to pay?</summary>
+          <p>No. Players never pay anything, ever. Pro is bought once by whoever runs the competition, and it covers everyone in it.</p>
+        </details>
+        <details class="faq">
+          <summary>Can people see my predictions before the game?</summary>
+          <p>No. Every prediction is hidden until that fixture kicks off — from other players and from the admin. It's the thing the whole competition rests on.</p>
+        </details>
+        <details class="faq">
+          <summary>What if I miss the deadline?</summary>
+          <p>The fixture scores zero and you lose the full-house bonuses for that gameweek. Nobody can let you in late, including the admin. That's deliberate.</p>
+        </details>
+        <details class="faq">
+          <summary>Can I change the scoring?</summary>
+          <p>Yes. The 2 and 5 are defaults. Admins can set their own values for results, exact scores and both full-house bonuses.</p>
+        </details>
+        <details class="faq">
+          <summary>What happens if a match is postponed?</summary>
+          <p>The admin voids the fixture. It comes out of the scoring for everyone and doesn't cost anybody their full-house bonus.</p>
+        </details>
+        <details class="faq">
+          <summary>Is there an Android version?</summary>
+          <p>Not yet — iPhone first. The web app works in any mobile browser in the meantime, and Android is on the list.</p>
+        </details>
+        <details class="faq">
+          <summary>How many people can be in a competition?</summary>
+          <p>As many as you like. It works just as well for six mates as for a workplace of sixty.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">Be first in</p>
+        <h2>We'll tell you the day it hits the App Store</h2>
+        <p>One email, on the day it goes live. Nothing else, and nothing in between.</p>
+      </div>
+
+      <form class="signup-form" name="launch" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="launch">
+        <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+        <label for="email" class="visually-hidden" hidden>Email address</label>
+        <input id="email" type="email" name="email" placeholder="you@example.co.uk" required>
+        <button type="submit">Tell me when it lands</button>
+      </form>
+
+      <p class="signup-note">Your address is used for the launch email and nothing else. Details in the <a href="/privacy" style="color:#F2C14E">privacy policy</a>.</p>
+
+      <div class="signup-done">
+        <h3>You're on the list</h3>
+        <p>We'll be in touch the day it's live. In the meantime the web app is open — you can set a competition up right now and have it waiting.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="closing">
     <div class="wrap">
       <h2>Start a league before the weekend</h2>
       <p>Takes about five minutes to set up. The arguments last considerably longer.</p>
       <div class="cta-row">
         <a class="btn" href="https://aloto-prediction-pro.netlify.app">Open the web app</a>
-        <a class="btn btn-ghost" href="/support">Read the guide</a>
+        <a class="btn btn-ghost" href="#signup">Get the launch email</a>
       </div>
     </div>
   </section>
@@ -332,24 +514,69 @@
 
   /* the tour: whichever step sits in the middle of the screen drives the screenshot */
   var steps = document.querySelectorAll(".tour-step");
-  var screens = document.querySelectorAll("#screens img");
+  var deck = document.getElementById("deck");
+  var panes = deck ? deck.querySelectorAll(".pane") : [];
+  var flat = window.matchMedia("(max-width: 980px)");
 
-  if (steps.length && "IntersectionObserver" in window) {
-    var show = function (n) {
-      steps.forEach(function (s, i) { s.classList.toggle("on", i === n); });
-      screens.forEach(function (img, i) { img.classList.toggle("on", i === n); });
-    };
+  function place(active) {
+    steps.forEach(function (s, i) { s.classList.toggle("on", i === active); });
 
+    var isFlat = flat.matches || reduce;
+    deck.classList.toggle("flat", isFlat);
+
+    panes.forEach(function (p, i) {
+      var d = i - active;
+
+      if (d > 0 || d < -4) {
+        /* not reached yet, or buried too deep to be worth drawing */
+        p.style.opacity = 0;
+        p.style.zIndex = 0;
+        if (!isFlat) p.style.transform = "translate3d(70px,0,-1000px) rotateY(-20deg)";
+        return;
+      }
+
+      var k = -d;                       /* 0 = front, 1..4 = stacked behind */
+      p.style.opacity = isFlat ? (k === 0 ? 1 : 0) : Math.max(0, 1 - k * 0.2);
+      p.style.zIndex = 20 - k;
+
+      if (!isFlat) {
+        p.style.transform =
+          "translate3d(" + (-k * 52) + "px," + (-k * 22) + "px," + (-k * 140) + "px) " +
+          "rotateY(" + (-15 - k * 1.4) + "deg) rotateX(" + (2.4 + k * 0.5) + "deg)";
+        p.style.filter = k ? "brightness(" + (1 - k * 0.13) + ")" : "none";
+      }
+    });
+  }
+
+  if (steps.length && deck && "IntersectionObserver" in window) {
     var stepObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting) show(+e.target.dataset.step);
+        if (e.isIntersecting) place(+e.target.dataset.step);
       });
     }, { rootMargin: "-45% 0px -45% 0px", threshold: 0 });
 
     steps.forEach(function (s) { stepObserver.observe(s); });
-    show(0);
-  } else {
+    place(0);
+
+    flat.addEventListener("change", function () {
+      var on = document.querySelector(".tour-step.on");
+      place(on ? +on.dataset.step : 0);
+    });
+  } else if (steps.length) {
     steps.forEach(function (s) { s.classList.add("on"); });
+    panes.forEach(function (p) { p.style.opacity = 1; });
+  }
+
+  /* launch signup posts without leaving the page */
+  var form = document.querySelector(".signup-form");
+  if (form) {
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var data = new URLSearchParams(new FormData(form)).toString();
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: data })
+        .then(function () { document.getElementById("signup").classList.add("sent"); })
+        .catch(function () { form.submit(); });
+    });
   }
 
   /* section headings ease in once */

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The tour — ALOTO Prediction Pro</title>
+<meta name="description" content="Every screen in ALOTO Prediction Pro — joining with a code, entering predictions, the table, monthly winners and the cup.">
+<meta name="theme-color" content="#0B0E13">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="wordmark" href="/"><img src="assets/logo.png" alt="ALOTO Prediction Pro"></a>
+    <nav>
+      <a href="/" data-nav="home">Home</a>
+      <a href="/tour" class="on" data-nav="tour">Tour</a>
+      <a href="/support" data-nav="support">Support</a>
+      <a href="/privacy" data-nav="privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="doc-header">
+  <div class="wrap">
+    <p class="eyebrow">The tour</p>
+    <h1>Every screen, as it actually looks</h1>
+    <p>No mock-ups and no marketing angles — these are straight captures of the app. It plays on its own; hover to stop it, or click the bars to jump.</p>
+  </div>
+</div>
+
+<main class="tour-page">
+  <section class="reel" id="how">
+    <div class="wrap">
+      <div class="reel-stage">
+        <div class="reel-bar">
+          <i></i><i></i><i></i>
+          <span>app.alotopredictionpro.co.uk</span>
+        </div>
+
+        <img class="reel-frame on" data-at="0" src="assets/reel-01.jpg" alt="Joining a competition with a code">
+        <img class="reel-frame" data-at="1" src="assets/reel-02.jpg" alt="Entering score predictions for the gameweek" loading="lazy">
+        <img class="reel-frame" data-at="2" src="assets/reel-03.jpg" alt="Gameweek results and everyone's predictions" loading="lazy">
+        <img class="reel-frame" data-at="3" src="assets/reel-04.jpg" alt="The dashboard showing rank, points and outstanding predictions" loading="lazy">
+        <img class="reel-frame" data-at="4" src="assets/reel-05.jpg" alt="Overall standings table" loading="lazy">
+        <img class="reel-frame" data-at="5" src="assets/reel-06.jpg" alt="Monthly standings and the current leader" loading="lazy">
+        <img class="reel-frame" data-at="6" src="assets/reel-07.jpg" alt="The cup bracket with quarter-finals and semi-finals" loading="lazy">
+
+        <div class="reel-card">
+          <div class="reel-ticks" id="ticks">
+            <button type="button" data-go="0" aria-label="Screen 1: Join with a code"></button>
+            <button type="button" data-go="1" aria-label="Screen 2: Put your scores in"></button>
+            <button type="button" data-go="2" aria-label="Screen 3: Nobody sees anything early"></button>
+            <button type="button" data-go="3" aria-label="Screen 4: Your season at a glance"></button>
+            <button type="button" data-go="4" aria-label="Screen 5: The table keeps itself"></button>
+            <button type="button" data-go="5" aria-label="Screen 6: Somebody wins every month"></button>
+            <button type="button" data-go="6" aria-label="Screen 7: And the cup runs too"></button>
+          </div>
+
+          <div class="reel-copy on" data-at="0">
+            <span class="n">01</span>
+            <h3>Join with a code</h3>
+            <p>Someone sends you six characters. That's the whole invitation — without it, nobody can find the competition at all.</p>
+          </div>
+          <div class="reel-copy" data-at="1">
+            <span class="n">02</span>
+            <h3>Put your scores in</h3>
+            <p>A prediction against every fixture, saved as you type. Each one locks at its own kick-off, so Friday night closes before Saturday does.</p>
+          </div>
+          <div class="reel-copy" data-at="2">
+            <span class="n">03</span>
+            <h3>Nobody sees anything early</h3>
+            <p>Every other player's picks stay behind a padlock until the whistle. Then the whole grid opens at once.</p>
+          </div>
+          <div class="reel-copy" data-at="3">
+            <span class="n">04</span>
+            <h3>Your season at a glance</h3>
+            <p>Rank, total points, exact scores, and what you still owe. Season predictions and deadlines sit right there too.</p>
+          </div>
+          <div class="reel-copy" data-at="4">
+            <span class="n">05</span>
+            <h3>The table keeps itself</h3>
+            <p>Results, exact scores, bonuses and Triple Points, recalculated the moment a score goes in. Your row is the highlighted one.</p>
+          </div>
+          <div class="reel-copy" data-at="5">
+            <span class="n">06</span>
+            <h3>Somebody wins every month</h3>
+            <p>Monthly standings run alongside the overall table, so the title race being over doesn't end the season.</p>
+          </div>
+          <div class="reel-copy" data-at="6">
+            <span class="n">07</span>
+            <h3>And the cup runs too</h3>
+            <p>Head-to-head ties decided on gameweek points. No extra predictions — your league form carries you through or knocks you out.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-controls">
+        <button class="reel-play" id="playpause" type="button" aria-label="Pause the tour">❙❙ Pause</button>
+        <span class="reel-count" id="count">1 / 7</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <h2>Start a league before the weekend</h2>
+      <p>Five minutes to set up. The arguments last considerably longer.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://aloto-marketing.netlify.app">Open the app</a>
+        <a class="btn btn-quiet" href="/support">Read the guide</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <a class="wordmark" href="/"><img src="assets/logo.png" alt="ALOTO Prediction Pro"></a>
+    <nav>
+      <a href="/tour">Tour</a>
+      <a href="/support">Support and FAQs</a>
+      <a href="/privacy">Privacy</a>
+      <a href="https://aloto-marketing.netlify.app">Open the app</a>
+    </nav>
+    <span>© 2026 ALOTO Prediction Pro</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var frames = document.querySelectorAll(".reel-frame");
+  var copy = document.querySelectorAll(".reel-copy");
+  var ticks = document.querySelectorAll(".reel-ticks button");
+  var stage = document.querySelector(".reel-stage");
+  var playBtn = document.getElementById("playpause");
+  var count = document.getElementById("count");
+  var DWELL = 5200;
+  var at = 0, timer = null, playing = false, paused = false;
+
+  function show(n) {
+    at = (n + frames.length) % frames.length;
+    frames.forEach(function (f, i) { f.classList.toggle("on", i === at); });
+    copy.forEach(function (c, i) { c.classList.toggle("on", i === at); });
+    ticks.forEach(function (t, i) {
+      t.classList.remove("live", "done");
+      if (i < at) t.classList.add("done");
+      if (i === at) t.classList.add(playing && !paused ? "live" : "done");
+    });
+    count.textContent = (at + 1) + " / " + frames.length;
+  }
+
+  function tick() {
+    clearTimeout(timer);
+    if (!playing || paused) return;
+    timer = setTimeout(function () { show(at + 1); tick(); }, DWELL);
+  }
+
+  if (frames.length) {
+    if (reduce) {
+      paused = true;
+      show(0);
+      playBtn.innerHTML = "▶ Play";
+    } else {
+      document.documentElement.style.setProperty("--dwell", DWELL + "ms");
+
+      playBtn.addEventListener("click", function () {
+        paused = !paused;
+        playBtn.innerHTML = paused ? "▶ Play" : "❙❙ Pause";
+        playBtn.setAttribute("aria-label", paused ? "Play the tour" : "Pause the tour");
+        show(at); tick();
+      });
+
+      ticks.forEach(function (t) {
+        t.addEventListener("click", function () { show(+t.dataset.go); tick(); });
+      });
+
+      stage.addEventListener("mouseenter", function () {
+        if (playing) { clearTimeout(timer); ticks[at].classList.remove("live"); ticks[at].classList.add("done"); }
+      });
+      stage.addEventListener("mouseleave", function () {
+        if (playing && !paused) { show(at); tick(); }
+      });
+
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            playing = e.isIntersecting;
+            if (playing) { show(at); tick(); } else { clearTimeout(timer); }
+          });
+        }, { threshold: 0.3 }).observe(stage);
+      } else {
+        playing = true; show(0); tick();
+      }
+    }
+  }
+})();
+</script>
+</body>
+</html>

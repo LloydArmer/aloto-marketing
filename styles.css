@@ -97,26 +97,13 @@ img { max-width: 100%; }
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 15.5px;
   text-decoration: none;
-  letter-spacing: -0.01em;
-  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.wordmark .glyph {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: var(--panel-2);
-  border: 1px solid var(--border-strong);
-  display: grid;
-  place-items: center;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--blue);
-}
+.wordmark img { height: 30px; width: auto; display: block; }
+
+footer .wordmark img { height: 26px; opacity: 0.85; }
 
 .masthead nav {
   display: flex;
@@ -601,6 +588,74 @@ section { padding-block: clamp(52px, 7vw, 88px); }
   .reel-frame, .reel-copy { transition: none; }
   .reel-ticks button.live::after { animation: none; transform: scaleX(1); }
 }
+
+
+/* ---------- hero logo lockup ---------- */
+
+.hero-mark { margin-bottom: 26px; }
+.hero-mark img { width: min(430px, 78%); height: auto; display: block; }
+
+/* ---------- example league table, built like the app's ---------- */
+
+.tbl {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.tbl table { width: 100%; border-collapse: collapse; }
+
+.tbl th {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--muted);
+  text-align: right;
+  padding: 14px 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.tbl th:first-child, .tbl th:nth-child(2) { text-align: left; }
+
+.tbl td {
+  padding: 13px 10px;
+  font-size: 15px;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+.tbl td:first-child, .tbl td:nth-child(2) { text-align: left; }
+.tbl tr:last-child td { border-bottom: 0; }
+
+.tbl .pos { font-family: var(--mono); font-size: 13px; color: var(--muted); width: 42px; padding-left: 20px; }
+.tbl .who { font-weight: 500; }
+.tbl .res { color: var(--blue); font-family: var(--mono); }
+.tbl .exact { color: var(--green); font-family: var(--mono); }
+.tbl .dash { color: var(--faint); }
+.tbl .tot { font-family: var(--mono); font-weight: 600; color: var(--blue); padding-right: 20px; }
+
+.tbl tr.me td { background: rgba(74, 158, 255, 0.11); }
+.tbl tr.me .pos { color: var(--blue); box-shadow: inset 2px 0 0 var(--blue); }
+.tbl tr:nth-child(1) .pos { color: var(--gold); }
+
+.tbl-note { text-align: center; font-size: 13px; color: var(--faint); padding: 14px 10px 16px; }
+
+/* two-up layout for the examples */
+
+.demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+
+@media (max-width: 940px) { .demo-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .tbl .hide-s { display: none; }
+  .tbl td, .tbl th { padding-inline: 7px; }
+}
+
+/* ---------- tour page ---------- */
+
+.tour-page .reel-stage { margin-top: 8px; }
 
 /* ---------- pricing ---------- */
 

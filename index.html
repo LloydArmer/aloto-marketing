@@ -8,70 +8,65 @@
 <meta property="og:title" content="ALOTO Prediction Pro">
 <meta property="og:description" content="A private football score prediction league for you and your mates. Join by code, no public leaderboards.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0C3B2C">
+<meta name="theme-color" content="#0B0E13">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="hero">
-  <div class="markings" aria-hidden="true"></div>
-
+<header class="masthead">
   <div class="wrap">
-    <div class="masthead">
-      <a class="wordmark" href="/">ALOTO Prediction <span class="pro">PRO</span></a>
-      <nav>
-        <a href="#how">The season</a>
-        <a href="#scoring">Scoring</a>
-        <a href="#pricing">Free &amp; Pro</a>
-        <a href="#faq">Questions</a>
-      </nav>
-    </div>
+    <a class="wordmark" href="/"><span class="glyph">A</span> ALOTO Prediction Pro</a>
+    <nav>
+      <a class="on" href="#how">The tour</a>
+      <a href="#scoring">Scoring</a>
+      <a href="#price">Price</a>
+      <a href="#faq">Questions</a>
+      <a href="/support">Support</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="hero-grid">
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">Private prediction leagues</p>
         <h1>Predict the scores. <em>Settle it properly.</em></h1>
         <p class="lede">ALOTO Prediction Pro runs the football prediction league you've been keeping in a spreadsheet. Set it up, share a join code, and it does the maths every week — results, tables, cups and all.</p>
         <div class="cta-row">
-          <a class="btn" href="https://aloto-prediction-pro.netlify.app">Open the web app</a>
-          <!-- Swap href for the App Store link once the listing is live -->
-          <a class="btn btn-ghost" href="#signup">For iPhone <small>Coming soon</small></a>
+          <a class="btn btn-primary" href="https://aloto-marketing.netlify.app">Open the app</a>
+          <a class="btn btn-quiet" href="#signup">For iPhone <small>Coming soon</small></a>
         </div>
       </div>
 
-      <div class="coupon" id="coupon">
+      <div class="panel coupon" id="coupon">
         <div class="coupon-head">
-          <span>Gameweek 12</span>
-          <span>Sat 15:00</span>
-        </div>
-
-        <div class="coupon-labels">
-          <span>Fixture</span><span>Your pick</span><span>Result</span><span>Pts</span>
+          <strong>Gameweek 12</strong>
+          <span>Correct result = 2pts · Exact score = +5pts</span>
         </div>
 
         <div class="fixture" data-hit="exact">
-          <div class="teams"><b>Arsenal</b><i>v</i><b>Chelsea</b></div>
-          <div class="pick">2–1</div>
-          <div class="actual reveal">2–1</div>
-          <div class="pts reveal">5</div>
+          <span class="home">Northside United</span>
+          <span class="box">2</span><span class="v">–</span><span class="box">1</span>
+          <span class="away">Brackley City</span>
+          <span class="pts reveal">+5</span>
         </div>
-
         <div class="fixture" data-hit="result">
-          <div class="teams"><b>Everton</b><i>v</i><b>Brentford</b></div>
-          <div class="pick">1–1</div>
-          <div class="actual reveal">0–0</div>
-          <div class="pts reveal">2</div>
+          <span class="home">Devon Wanderers</span>
+          <span class="box">1</span><span class="v">–</span><span class="box">1</span>
+          <span class="away">Ashfield Athletic</span>
+          <span class="pts reveal">+2</span>
         </div>
-
         <div class="fixture" data-hit="miss">
-          <div class="teams"><b>Spurs</b><i>v</i><b>Newcastle</b></div>
-          <div class="pick">0–2</div>
-          <div class="actual reveal">3–1</div>
-          <div class="pts reveal">0</div>
+          <span class="home">Elmwood FC</span>
+          <span class="box">0</span><span class="v">–</span><span class="box">2</span>
+          <span class="away">Kingsmoor Town</span>
+          <span class="pts reveal">0</span>
         </div>
 
         <div class="coupon-total">
@@ -79,15 +74,100 @@
           <strong id="total">0</strong>
         </div>
 
-        <p class="coupon-note">Right result, 2 points. Right score, 5. Everyone's picks stay hidden until kick-off.</p>
+        <p class="coupon-note">Everyone's picks stay locked until kick-off — including the admin's.</p>
       </div>
     </div>
-  </div>
-</header>
+  </section>
 
-<main>
+  <section class="reel" id="how">
+    <div class="wrap">
+      <div class="reel-intro rise">
+        <p class="eyebrow">The tour</p>
+        <h2 style="font-size:clamp(27px,3.4vw,40px)">Every screen, as it actually looks</h2>
+      </div>
 
-  <section class="why">
+      <div class="reel-stage rise">
+        <div class="reel-bar">
+          <i></i><i></i><i></i>
+          <span>app.alotopredictionpro.co.uk</span>
+        </div>
+
+        <img class="reel-frame on" data-at="0" src="assets/reel-01.jpg" alt="Joining a competition with a code">
+        <img class="reel-frame" data-at="1" src="assets/reel-02.jpg" alt="Entering score predictions for the gameweek" loading="lazy">
+        <img class="reel-frame" data-at="2" src="assets/reel-03.jpg" alt="Gameweek results and everyone's predictions" loading="lazy">
+        <img class="reel-frame" data-at="3" src="assets/reel-04.jpg" alt="The dashboard showing rank, points and outstanding predictions" loading="lazy">
+        <img class="reel-frame" data-at="4" src="assets/reel-05.jpg" alt="Overall standings table" loading="lazy">
+        <img class="reel-frame" data-at="5" src="assets/reel-06.jpg" alt="Monthly standings and the current leader" loading="lazy">
+        <img class="reel-frame" data-at="6" src="assets/reel-07.jpg" alt="The cup bracket with quarter-finals and semi-finals" loading="lazy">
+
+        <div class="reel-card">
+          <div class="reel-ticks" id="ticks">
+            <button type="button" data-go="0" aria-label="Screen 1: Join with a code"></button>
+            <button type="button" data-go="1" aria-label="Screen 2: Put your scores in"></button>
+            <button type="button" data-go="2" aria-label="Screen 3: Nobody sees anything early"></button>
+            <button type="button" data-go="3" aria-label="Screen 4: Your season at a glance"></button>
+            <button type="button" data-go="4" aria-label="Screen 5: The table keeps itself"></button>
+            <button type="button" data-go="5" aria-label="Screen 6: Somebody wins every month"></button>
+            <button type="button" data-go="6" aria-label="Screen 7: And the cup runs too"></button>
+          </div>
+
+          <div class="reel-copy on" data-at="0">
+            <span class="n">01</span>
+            <h3>Join with a code</h3>
+            <p>Someone sends you six characters. That's the whole invitation — without it, nobody can find the competition at all.</p>
+          </div>
+          <div class="reel-copy" data-at="1">
+            <span class="n">02</span>
+            <h3>Put your scores in</h3>
+            <p>A prediction against every fixture, saved as you type. Each one locks at its own kick-off, so Friday night closes before Saturday does.</p>
+          </div>
+          <div class="reel-copy" data-at="2">
+            <span class="n">03</span>
+            <h3>Nobody sees anything early</h3>
+            <p>Every other player's picks stay behind a padlock until the whistle. Then the whole grid opens at once.</p>
+          </div>
+          <div class="reel-copy" data-at="3">
+            <span class="n">04</span>
+            <h3>Your season at a glance</h3>
+            <p>Rank, total points, exact scores, and what you still owe. Season predictions and deadlines sit right there too.</p>
+          </div>
+          <div class="reel-copy" data-at="4">
+            <span class="n">05</span>
+            <h3>The table keeps itself</h3>
+            <p>Results, exact scores, bonuses and Triple Points, recalculated the moment a score goes in. Your row is the highlighted one.</p>
+          </div>
+          <div class="reel-copy" data-at="5">
+            <span class="n">06</span>
+            <h3>Somebody wins every month</h3>
+            <p>Monthly standings run alongside the overall table, so the title race being over doesn't end the season.</p>
+          </div>
+          <div class="reel-copy" data-at="6">
+            <span class="n">07</span>
+            <h3>And the cup runs too</h3>
+            <p>Head-to-head ties decided on gameweek points. No extra predictions — your league form carries you through or knocks you out.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel-controls">
+        <button class="reel-play" id="playpause" type="button" aria-label="Pause the tour">❙❙ Pause</button>
+        <span class="reel-count" id="count">1 / 7</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat rise"><div class="label">Correct result</div><div class="n" style="color:var(--blue)">2</div><div class="sub">points, every time</div></div>
+        <div class="stat rise"><div class="label">Exact score</div><div class="n" style="color:var(--green)">+5</div><div class="sub">bonus on top</div></div>
+        <div class="stat rise"><div class="label">Weekly admin</div><div class="n">60s</div><div class="sub">once results are out</div></div>
+        <div class="stat rise"><div class="label">Public leaderboards</div><div class="n" style="color:var(--amber)">0</div><div class="sub">now or ever</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <div class="wrap why-grid">
       <div class="rise">
         <p class="eyebrow">Why it exists</p>
@@ -96,112 +176,74 @@
       <div class="why-body rise">
         <p>Every group has one. A tab per gameweek, a formula somebody wrote in 2019 that nobody dares touch, and one person doing the sums on a Sunday night while everyone else waits to find out whether they've gone up or down.</p>
         <p>And every group has the other thing too — the argument. Somebody swears blind they said 2–1. There's no record. It gets settled by whoever shouts longest.</p>
-        <p class="why-pull">The app is just the spreadsheet, minus the Sunday night, minus the arguing.</p>
+        <p class="pull">The app is the spreadsheet, minus the Sunday night, minus the arguing.</p>
         <p>Predictions are timestamped and locked at kick-off, so what you said is what you said. The maths happens the moment results go in. And because a competition is joined by code and shows up nowhere else, it stays what it always was: <strong>your lot, and nobody else.</strong></p>
       </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap band-grid">
-      <div class="rise"><span class="n">2</span><p>points for calling the result</p></div>
-      <div class="rise"><span class="n">5</span><p>for getting the score spot on</p></div>
-      <div class="rise"><span class="n">60s</span><p>of admin a week, once results are out</p></div>
-      <div class="rise"><span class="n">0</span><p>public leaderboards, now or ever</p></div>
-    </div>
-  </section>
-
-  <section class="reel" id="how">
-    <div class="wrap reel-intro rise">
-      <p class="eyebrow">Watch a season come together</p>
-      <h2>One room, one camera, a season filling it up</h2>
-      <p>Keep scrolling. Nothing here is a mock-up of a feature list — it's what the thing actually turns into.</p>
-    </div>
-
-    <div class="reel-sticky">
-        <img class="reel-frame on" data-at="0" src="assets/frame-01.jpg" alt="A dark room and an empty screen">
-        <img class="reel-frame" data-at="1" src="assets/frame-02.jpg" alt="The competition opens">
-        <img class="reel-frame" data-at="2" src="assets/frame-03.jpg" alt="The code goes out">
-        <img class="reel-frame" data-at="3" src="assets/frame-04.jpg" alt="The fixtures arrive">
-        <img class="reel-frame" data-at="4" src="assets/frame-05.jpg" alt="Everybody predicts">
-        <img class="reel-frame" data-at="5" src="assets/frame-06.jpg" alt="Results land">
-        <img class="reel-frame" data-at="6" src="assets/frame-07.jpg" alt="The table settles">
-      <div class="reel-vignette"></div>
-
-      <div class="reel-card">
-        <div class="reel-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="reel-copy on" data-at="0">
-            <span class="n">01</span>
-            <h3>A dark room and an empty screen</h3>
-            <p>Before any of it exists there's just the idea, and the group chat where somebody says we should do a prediction league this year.</p>
-          </div>
-          <div class="reel-copy" data-at="1">
-            <span class="n">02</span>
-            <h3>The competition opens</h3>
-            <p>Pick a format, name it, and you're the admin. Nothing in it yet — a shell waiting for a season.</p>
-          </div>
-          <div class="reel-copy" data-at="2">
-            <span class="n">03</span>
-            <h3>The code goes out</h3>
-            <p>One six-character code into the chat. That's the whole invitation, and without it nobody can find the competition at all.</p>
-          </div>
-          <div class="reel-copy" data-at="3">
-            <span class="n">04</span>
-            <h3>The fixtures arrive</h3>
-            <p>Add the matches you want to cover and set the kick-off times. Each one locks itself the moment its game starts.</p>
-          </div>
-          <div class="reel-copy" data-at="4">
-            <span class="n">05</span>
-            <h3>Everybody predicts</h3>
-            <p>A score against every fixture, saved as they type. Hidden from everyone else — the admin included — until the whistle.</p>
-          </div>
-          <div class="reel-copy" data-at="5">
-            <span class="n">06</span>
-            <h3>Results land</h3>
-            <p>You enter the final scores. Points, bonuses and Triple Points all resolve at once, and that's the only job you had all week.</p>
-          </div>
-          <div class="reel-copy" data-at="6">
-            <span class="n">07</span>
-            <h3>The table settles</h3>
-            <p>Positions, monthly winners, the cup running alongside. Nobody adds anything up, and nobody argues about the arithmetic.</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="reel-track">
-      <div class="reel-beat" data-step="0"></div>
-      <div class="reel-beat" data-step="1"></div>
-      <div class="reel-beat" data-step="2"></div>
-      <div class="reel-beat" data-step="3"></div>
-      <div class="reel-beat" data-step="4"></div>
-      <div class="reel-beat" data-step="5"></div>
-      <div class="reel-beat" data-step="6"></div>
     </div>
   </section>
 
   <section id="formats">
     <div class="wrap">
       <div class="section-head rise">
-        <p class="eyebrow">Three ways to run it</p>
+        <p class="eyebrow">Three formats</p>
         <h2>A season, a cup, or both at once</h2>
-        <p>Every competition is separate, and you can run as many as your group has appetite for.</p>
+        <p>Run as many as your group has the appetite for. They all score off the same predictions.</p>
       </div>
 
-      <div class="formats">
-        <div class="format">
+      <div class="chips rise" style="margin-bottom:20px">
+        <span class="chip gold"><i>⚡</i> Knockout</span>
+        <span class="chip purple"><i>◈</i> Group + Knockout</span>
+        <span class="chip blue"><i>≡</i> League</span>
+      </div>
+
+      <div class="cards">
+        <div class="card rise">
           <span class="tag">League</span>
           <h3>The long game</h3>
-          <p>Weekly gameweeks feeding a running points table, with a monthly winner declared alongside the overall standings. This is where your scoring rules live.</p>
+          <p>Weekly gameweeks feeding a running table, with a monthly winner alongside the overall standings. This is where your points rules live.</p>
         </div>
-        <div class="format">
-          <span class="tag">Knockout</span>
+        <div class="card rise">
+          <span class="tag g">Knockout</span>
           <h3>Head to head</h3>
-          <p>Players are drawn against each other and the higher gameweek score goes through. Level on points means a replay. Cup upsets are the whole point.</p>
+          <p>Players drawn against each other, decided on the gameweek points they'd already earned. No separate prediction needed.</p>
         </div>
-        <div class="format">
-          <span class="tag">Group + Knockout</span>
+        <div class="card rise">
+          <span class="tag a">Group + Knockout</span>
           <h3>Tournament format</h3>
-          <p>A round-robin group stage over several gameweeks, then the top players carry into a bracket. Best suited to a Euros or World Cup summer.</p>
+          <p>A round-robin group stage across several gameweeks, then the top players carry into a bracket. Built for a Euros or World Cup summer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scoring">
+    <div class="wrap">
+      <div class="section-head rise">
+        <p class="eyebrow">Scoring</p>
+        <h2>Getting close counts. Getting it exactly right counts more.</h2>
+        <p>These are the defaults. Admins can change any of the values to suit their group.</p>
+      </div>
+
+      <div class="rules">
+        <div class="rule rise">
+          <div class="v">2</div>
+          <div><h3>Correct result</h3><p>You called the home win, away win or draw.</p></div>
+        </div>
+        <div class="rule rise">
+          <div class="v">+5</div>
+          <div><h3>Exact score</h3><p>A bonus on top for calling the scoreline itself.</p></div>
+        </div>
+        <div class="rule rise">
+          <div class="v">FH</div>
+          <div><h3>Full house on results</h3><p>Every result in the gameweek correct. You need a prediction on every fixture to qualify.</p></div>
+        </div>
+        <div class="rule rise">
+          <div class="v">FH</div>
+          <div><h3>Full house on scores</h3><p>Every scoreline exact. Rare enough to be worth talking about for years.</p></div>
+        </div>
+        <div class="rule rise">
+          <div class="v">×3</div>
+          <div><h3>Triple Points</h3><p>Two chips a season, one due by 31st December and one by the end of the season. Predict every fixture in the gameweek to unlock it.</p></div>
         </div>
       </div>
     </div>
@@ -212,88 +254,15 @@
       <div class="section-head rise">
         <p class="eyebrow">What's in it</p>
         <h2>The bits that used to be your job</h2>
-        <p>None of this is configuration you have to think about. It's what the app does once the fixtures are in.</p>
       </div>
 
-      <div class="inside">
-        <div>
-          <span class="mark">✦</span>
-          <h3>Gameweeks that lock themselves</h3>
-          <p>Each fixture closes at its own kick-off. No deadline to police, no messages asking if you can squeeze one in late.</p>
-        </div>
-        <div>
-          <span class="mark">✦</span>
-          <h3>A table that keeps itself</h3>
-          <p>Points, exact scores, correct results and position, updated the moment a result lands. Monthly standings sit alongside the overall.</p>
-        </div>
-        <div>
-          <span class="mark">✦</span>
-          <h3>Cups and brackets</h3>
-          <p>Knockout ties drawn on gameweek points, replays when players tie, and group stages if you want a tournament shape.</p>
-        </div>
-        <div>
-          <span class="mark">✦</span>
-          <h3>Triple Points</h3>
-          <p>Two chips a season, one either side of New Year. The gamble that turns a quiet December into a comeback.</p>
-        </div>
-        <div>
-          <span class="mark">✦</span>
-          <h3>Monthly winners</h3>
-          <p>Close a month and the standings lock. Somebody wins something even when the title race is long gone.</p>
-        </div>
-        <div>
-          <span class="mark">✦</span>
-          <h3>Reminders before kick-off</h3>
-          <p>A nudge when a gameweek opens, then 24 hours and one hour before — and only if you've still got predictions outstanding.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="board" id="scoring">
-    <div class="wrap">
-      <div class="section-head rise">
-        <p class="eyebrow">Scoring</p>
-        <h2>Getting close counts. Getting it exactly right counts more.</h2>
-        <p>These are the defaults. Admins can change the values to suit their group.</p>
-      </div>
-
-      <div class="rules">
-        <div class="rule">
-          <div class="value">2</div>
-          <div>
-            <h3>Correct result</h3>
-            <p>You called the home win, away win or draw.</p>
-          </div>
-        </div>
-        <div class="rule">
-          <div class="value">5</div>
-          <div>
-            <h3>Exact score</h3>
-            <p>The result, plus a 3-point bonus for nailing the scoreline.</p>
-          </div>
-        </div>
-        <div class="rule">
-          <div class="value">+15</div>
-          <div>
-            <h3>Full house on results</h3>
-            <p>Every result in the gameweek correct. You need a prediction on every fixture to qualify.</p>
-          </div>
-        </div>
-        <div class="rule">
-          <div class="value">+30</div>
-          <div>
-            <h3>Full house on scores</h3>
-            <p>Every scoreline in the gameweek exact. Rare enough to be worth talking about for years.</p>
-          </div>
-        </div>
-        <div class="rule">
-          <div class="value">×3</div>
-          <div>
-            <h3>Triple Points</h3>
-            <p>Two chips a season — one before New Year, one after. Triples everything you score that gameweek, as long as you've predicted every fixture.</p>
-          </div>
-        </div>
+      <div class="cards">
+        <div class="card rise"><h3>Gameweeks that lock themselves</h3><p>Each fixture closes at its own kick-off. No deadline to police, no messages asking if you can squeeze one in late.</p></div>
+        <div class="card rise"><h3>A table that keeps itself</h3><p>Results, exact scores, bonuses and position, updated the moment a score lands. Monthly standings sit alongside the overall.</p></div>
+        <div class="card rise"><h3>Cups and brackets</h3><p>Knockout ties decided on gameweek points, with group stages if you want a tournament shape.</p></div>
+        <div class="card rise"><h3>Triple Points</h3><p>Two chips a season, one either side of New Year. The gamble that turns a quiet December into a comeback.</p></div>
+        <div class="card rise"><h3>Season predictions</h3><p>Final-table picks and one-off questions, with their own deadlines running in the background all year.</p></div>
+        <div class="card rise"><h3>Reminders before kick-off</h3><p>A nudge when a gameweek opens, then 24 hours and one hour before — and only if you've still got predictions outstanding.</p></div>
       </div>
     </div>
   </section>
@@ -305,97 +274,32 @@
         <h2>Your league, nobody else's business</h2>
       </div>
 
-      <div class="private-grid">
-        <div>
-          <h3>Join by code only</h3>
-          <p>There is no public directory and no browsing other people's competitions. If you weren't sent the code, you can't get in.</p>
-        </div>
-        <div>
-          <h3>No global leaderboard</h3>
-          <p>You're not ranked against strangers. The only table that exists is the one with your mates in it.</p>
-        </div>
-        <div>
-          <h3>Picks hidden until kick-off</h3>
-          <p>Nobody can see what anyone else has gone for until the match starts. No copying, no late tactical changes.</p>
-        </div>
+      <div class="cards">
+        <div class="card rise"><h3>Join by code only</h3><p>No public directory, no browsing other people's competitions. If you weren't sent the code, you can't get in.</p></div>
+        <div class="card rise"><h3>No global leaderboard</h3><p>You're not ranked against strangers. The only table that exists is the one with your mates in it.</p></div>
+        <div class="card rise"><h3>Picks hidden until kick-off</h3><p>Everyone else's predictions sit behind a padlock until the match starts. No copying, no late changes.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="pricing">
+  <section id="price">
     <div class="wrap">
-      <div class="section-head rise">
-        <p class="eyebrow">Free &amp; Pro</p>
-        <h2>Players never pay. Ever.</h2>
-        <p>If you've been invited to a league, the app is free and always will be. Pro is an upgrade for the person running things, and it applies to every competition they set up.</p>
+      <div class="section-head rise" style="text-align:center;margin-inline:auto">
+        <p class="eyebrow">Price</p>
+        <h2>It's free</h2>
       </div>
 
-      <div class="pricing">
-        <div class="plan">
-          <h3>Free</h3>
-          <span class="price">£0</span>
-          <ul>
-            <li>Unlimited league competitions</li>
-            <li>Unlimited players and gameweeks</li>
-            <li>Full points table and monthly winners</li>
-            <li>Prediction reminders before kick-off</li>
-            <li>One cup competition</li>
-            <li>One final-table prediction</li>
-          </ul>
-          <p class="footnote">Everything a group needs for a normal season.</p>
-        </div>
-
-        <div class="plan pro">
-          <h3>Pro — admin only</h3>
-          <span class="price">One unlock</span>
-          <ul>
-            <li>Everything in Free</li>
-            <li>As many cup competitions as you like</li>
-            <li>As many final-table predictions as you like</li>
-            <li>Run a league, a cup and a tournament side by side</li>
-          </ul>
-          <p class="footnote">Bought once by the admin. Everyone in their competitions gets the benefit without paying anything.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="shots" id="shots">
-    <div class="wrap">
-      <div class="section-head rise">
-        <p class="eyebrow">The real thing</p>
-        <h2>Every screen, as it actually looks</h2>
-        <p>Scroll sideways. No mockups, no marketing angles — the app as an admin sees it.</p>
-      </div>
-      <div class="shot-strip">
-        <figure>
-          <img src="assets/screen-01.svg" alt="Creating a competition" loading="lazy">
-          <figcaption>01 — Creating a competition</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screen-02.svg" alt="The join code" loading="lazy">
-          <figcaption>02 — The join code</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screen-03.svg" alt="Fixtures and kick-off times" loading="lazy">
-          <figcaption>03 — Fixtures and kick-off times</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screen-04.svg" alt="Entering predictions" loading="lazy">
-          <figcaption>04 — Entering predictions</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screen-05.svg" alt="Results going in" loading="lazy">
-          <figcaption>05 — Results going in</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screen-06.svg" alt="The standings table" loading="lazy">
-          <figcaption>06 — The standings table</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/screen-07.svg" alt="The cup bracket" loading="lazy">
-          <figcaption>07 — The cup bracket</figcaption>
-        </figure>
+      <div class="free-card rise">
+        <div class="price">£0</div>
+        <p>No adverts, no subscription, nothing to buy. Set up as many competitions as you like and invite as many people as you want.</p>
+        <ul class="free-list">
+          <li>Unlimited players and gameweeks</li>
+          <li>Full table and monthly winners</li>
+          <li>Leagues, cups and tournaments</li>
+          <li>Season predictions</li>
+          <li>Triple Points chips</li>
+          <li>Prediction reminders</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -408,59 +312,36 @@
       </div>
 
       <div class="faq-list">
-        <details class="faq">
-          <summary>Does everyone have to pay?</summary>
-          <p>No. Players never pay anything, ever. Pro is bought once by whoever runs the competition, and it covers everyone in it.</p>
-        </details>
-        <details class="faq">
-          <summary>Can people see my predictions before the game?</summary>
-          <p>No. Every prediction is hidden until that fixture kicks off — from other players and from the admin. It's the thing the whole competition rests on.</p>
-        </details>
-        <details class="faq">
-          <summary>What if I miss the deadline?</summary>
-          <p>The fixture scores zero and you lose the full-house bonuses for that gameweek. Nobody can let you in late, including the admin. That's deliberate.</p>
-        </details>
-        <details class="faq">
-          <summary>Can I change the scoring?</summary>
-          <p>Yes. The 2 and 5 are defaults. Admins can set their own values for results, exact scores and both full-house bonuses.</p>
-        </details>
-        <details class="faq">
-          <summary>What happens if a match is postponed?</summary>
-          <p>The admin voids the fixture. It comes out of the scoring for everyone and doesn't cost anybody their full-house bonus.</p>
-        </details>
-        <details class="faq">
-          <summary>Is there an Android version?</summary>
-          <p>Not yet — iPhone first. The web app works in any mobile browser in the meantime, and Android is on the list.</p>
-        </details>
-        <details class="faq">
-          <summary>How many people can be in a competition?</summary>
-          <p>As many as you like. It works just as well for six mates as for a workplace of sixty.</p>
-        </details>
+        <details class="faq"><summary>Can people see my predictions before the game?</summary><p>No. Every prediction is hidden until that fixture kicks off — from other players and from the admin. It's the thing the whole competition rests on.</p></details>
+        <details class="faq"><summary>What if I miss the deadline?</summary><p>The fixture scores zero and you lose the full-house bonuses for that gameweek. Nobody can let you in late, including the admin. That's deliberate.</p></details>
+        <details class="faq"><summary>Can I change the scoring?</summary><p>Yes. The 2 and the +5 are defaults. Admins can set their own values for results, exact scores and both full-house bonuses.</p></details>
+        <details class="faq"><summary>What happens if a match is postponed?</summary><p>The admin voids the fixture. It comes out of the scoring for everyone and doesn't cost anybody their full-house bonus.</p></details>
+        <details class="faq"><summary>How many people can be in a competition?</summary><p>As many as you like. It works just as well for six mates as for a workplace of sixty.</p></details>
+        <details class="faq"><summary>Is there an Android version?</summary><p>Not yet — iPhone first. The web app works in any mobile browser in the meantime, and Android is on the list.</p></details>
       </div>
     </div>
   </section>
 
   <section class="signup" id="signup">
     <div class="wrap">
-      <div class="section-head rise">
+      <div class="signup-inner">
         <p class="eyebrow">Be first in</p>
-        <h2>We'll tell you the day it hits the App Store</h2>
-        <p>One email, on the day it goes live. Nothing else, and nothing in between.</p>
-      </div>
+        <h2 style="font-size:clamp(24px,3vw,34px)">We'll tell you the day it hits the App Store</h2>
+        <p style="color:var(--muted);margin:12px 0 24px;max-width:34em">One email, on the day it goes live. Nothing else, and nothing in between.</p>
 
-      <form class="signup-form" name="launch" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="launch">
-        <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
-        <label for="email" class="visually-hidden" hidden>Email address</label>
-        <input id="email" type="email" name="email" placeholder="you@example.co.uk" required>
-        <button type="submit">Tell me when it lands</button>
-      </form>
+        <form class="signup-form" name="launch" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="launch">
+          <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+          <input type="email" name="email" placeholder="you@example.co.uk" aria-label="Email address" required>
+          <button class="btn btn-primary" type="submit">Tell me when it lands</button>
+        </form>
 
-      <p class="signup-note">Your address is used for the launch email and nothing else. Details in the <a href="/privacy" style="color:#F2C14E">privacy policy</a>.</p>
+        <p class="signup-note">Used for the launch email and nothing else. Details in the <a href="/privacy">privacy policy</a>.</p>
 
-      <div class="signup-done">
-        <h3>You're on the list</h3>
-        <p>We'll be in touch the day it's live. In the meantime the web app is open — you can set a competition up right now and have it waiting.</p>
+        <div class="signup-done">
+          <h3>You're on the list</h3>
+          <p>We'll be in touch the day it's live. In the meantime the web app is open — you can set a competition up right now and have it waiting.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -468,10 +349,10 @@
   <section class="closing">
     <div class="wrap">
       <h2>Start a league before the weekend</h2>
-      <p>Takes about five minutes to set up. The arguments last considerably longer.</p>
+      <p>Five minutes to set up. The arguments last considerably longer.</p>
       <div class="cta-row">
-        <a class="btn" href="https://aloto-prediction-pro.netlify.app">Open the web app</a>
-        <a class="btn btn-ghost" href="#signup">Get the launch email</a>
+        <a class="btn btn-primary" href="https://aloto-marketing.netlify.app">Open the app</a>
+        <a class="btn btn-quiet" href="/support">Read the guide</a>
       </div>
     </div>
   </section>
@@ -480,11 +361,11 @@
 
 <footer>
   <div class="wrap footer-grid">
-    <a class="wordmark" href="/">ALOTO Prediction <span class="pro">PRO</span></a>
+    <a class="wordmark" href="/"><span class="glyph">A</span> ALOTO Prediction Pro</a>
     <nav>
       <a href="/privacy">Privacy</a>
-      <a href="/support">Support</a>
-      <a href="https://aloto-prediction-pro.netlify.app">Open the app</a>
+      <a href="/support">Support and FAQs</a>
+      <a href="https://aloto-marketing.netlify.app">Open the app</a>
       <a href="mailto:support@alotopredictionpro.co.uk">support@alotopredictionpro.co.uk</a>
     </nav>
     <span>© 2026 ALOTO Prediction Pro</span>
@@ -495,56 +376,96 @@
 (function () {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* hero coupon: picks land, then results, then the points tot up */
   var total = document.getElementById("total");
   var reveals = document.querySelectorAll("#coupon .reveal");
-
   if (reduce) {
     reveals.forEach(function (el) { el.classList.add("on"); });
     total.textContent = "7";
   } else {
-    var running = [5, 7, 7];
-    var i = 0;
+    var running = [5, 7, 7], i = 0;
     (function next() {
-      if (i >= 3) return;
-      reveals[i * 2].classList.add("on");
-      reveals[i * 2 + 1].classList.add("on");
+      if (i >= reveals.length) return;
+      reveals[i].classList.add("on");
       total.textContent = running[i];
       i++;
-      setTimeout(next, 700);
+      setTimeout(next, 650);
     })();
   }
 
-  /* the tour: whichever step sits in the middle of the screen drives the screenshot */
-  var beats = document.querySelectorAll(".reel-beat");
-  var reelFrames = document.querySelectorAll(".reel-frame");
-  var reelCopy = document.querySelectorAll(".reel-copy");
-  var reelTicks = document.querySelectorAll(".reel-ticks i");
-  var shown = -1;
+  var frames = document.querySelectorAll(".reel-frame");
+  var copy = document.querySelectorAll(".reel-copy");
+  var ticks = document.querySelectorAll(".reel-ticks button");
+  var stage = document.querySelector(".reel-stage");
+  var playBtn = document.getElementById("playpause");
+  var count = document.getElementById("count");
+  var DWELL = 5200;
+  var at = 0, timer = null, playing = false, paused = false;
 
-  function cut(to) {
-    if (to === shown) return;
-    shown = to;
-    reelFrames.forEach(function (f, i) {
-      f.classList.remove("on");
-      if (i === to) { void f.offsetWidth; f.classList.add("on"); }
+  function show(n) {
+    at = (n + frames.length) % frames.length;
+    frames.forEach(function (f, i) { f.classList.toggle("on", i === at); });
+    copy.forEach(function (c, i) { c.classList.toggle("on", i === at); });
+    ticks.forEach(function (t, i) {
+      t.classList.remove("live", "done");
+      if (i < at) t.classList.add("done");
+      if (i === at && playing && !paused) t.classList.add("live");
+      if (i === at && (!playing || paused)) t.classList.add("done");
     });
-    reelCopy.forEach(function (c, i) { c.classList.toggle("on", i === to); });
-    reelTicks.forEach(function (t, i) { t.classList.toggle("on", i <= to); });
+    count.textContent = (at + 1) + " / " + frames.length;
   }
 
-  if (beats.length && "IntersectionObserver" in window) {
-    var beatObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) cut(+e.target.dataset.step);
+  function tick() {
+    clearTimeout(timer);
+    if (!playing || paused) return;
+    timer = setTimeout(function () { show(at + 1); tick(); }, DWELL);
+  }
+
+  function setPaused(state) {
+    paused = state;
+    playBtn.innerHTML = paused ? "▶ Play" : "❙❙ Pause";
+    playBtn.setAttribute("aria-label", paused ? "Play the tour" : "Pause the tour");
+    show(at);
+    tick();
+  }
+
+  if (frames.length) {
+    if (reduce) {
+      playing = false;
+      paused = true;
+      show(0);
+      playBtn.innerHTML = "▶ Play";
+    } else {
+      document.documentElement.style.setProperty("--dwell", DWELL + "ms");
+
+      playBtn.addEventListener("click", function () { setPaused(!paused); });
+
+      ticks.forEach(function (t) {
+        t.addEventListener("click", function () {
+          show(+t.dataset.go);
+          tick();
+        });
       });
-    }, { rootMargin: "-50% 0px -50% 0px", threshold: 0 });
 
-    beats.forEach(function (b) { beatObserver.observe(b); });
-    cut(0);
+      /* stop while the cursor is over it, so nothing moves as you read */
+      stage.addEventListener("mouseenter", function () { if (playing) { clearTimeout(timer); ticks[at].classList.remove("live"); ticks[at].classList.add("done"); } });
+      stage.addEventListener("mouseleave", function () { if (playing && !paused) { show(at); tick(); } });
+
+      /* only run while it is actually on screen */
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            playing = e.isIntersecting;
+            if (playing) { show(at); tick(); } else { clearTimeout(timer); }
+          });
+        }, { threshold: 0.35 }).observe(stage);
+      } else {
+        playing = true;
+        show(0);
+        tick();
+      }
+    }
   }
 
-  /* launch signup posts without leaving the page */
   var form = document.querySelector(".signup-form");
   if (form) {
     form.addEventListener("submit", function (ev) {
@@ -556,14 +477,11 @@
     });
   }
 
-  /* section headings ease in once */
   var rises = document.querySelectorAll(".rise");
   if ("IntersectionObserver" in window) {
-    var ro = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); }
-      });
-    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.15 });
+    var ro = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.12 });
     rises.forEach(function (el) { ro.observe(el); });
   } else {
     rises.forEach(function (el) { el.classList.add("in"); });

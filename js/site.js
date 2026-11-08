@@ -1,12 +1,11 @@
 /*
- * ALOTO Prediction Pro website. The store and web app links all live here.
+ * ALOTO Prediction Pro website. The store links all live here.
  * Leave a store link empty ('') and its badge shows "Coming soon".
  * When Google Play goes live, paste its link below and nothing else needs changing.
  */
 const LINKS = {
   appStore: 'https://apps.apple.com/gb/app/id6805768246',
   googlePlay: '', // e.g. 'https://play.google.com/store/apps/details?id=com.alotoprediction.app'
-  webApp: 'https://aloto-prediction-pro.netlify.app/',
 }
 
 document.documentElement.classList.remove('no-js')
@@ -26,13 +25,6 @@ document.querySelectorAll('[data-store]').forEach((a) => {
     a.setAttribute('title', 'Coming soon')
   }
 })
-// "Play in your browser" links. These stay while Android is coming soon,
-// because the web app is how Android players join in for now.
-document.querySelectorAll('[data-webapp]').forEach((a) => {
-  a.href = LINKS.webApp
-  a.rel = 'noopener'
-})
-
 // header: solid once scrolled, menu on phones
 const header = document.querySelector('.site-header')
 const onScroll = () => header && header.classList.toggle('solid', window.scrollY > 20)

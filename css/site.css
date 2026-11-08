@@ -515,3 +515,11 @@ h3 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); }
 .store.big .soon-tag { left: 60px; top: 11px; }
 .nav .brand img { height: 46px; }
 .foot-grid img { height: 54px; }
+
+/* brand: the app icon and the ALOTO name (replaces the old goal-post wordmark) */
+.nav .brand, .foot-brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white); }
+.nav .brand img, .foot-grid .foot-brand img { width: 44px; height: 44px; border-radius: 11px; margin: 0; box-shadow: 0 0 18px -4px rgba(124, 77, 255, 0.6); }
+.brand-name { font-family: var(--display); font-weight: 700; font-size: 1.75rem; letter-spacing: 0.08em; line-height: 0.95; display: grid; }
+.brand-name small { font-size: 0.68rem; letter-spacing: 0.22em; color: var(--accent-soft); font-weight: 600; text-transform: uppercase; }
+.foot-grid .foot-brand { margin-bottom: 18px; }
+.foot-grid .foot-brand img { width: 52px; height: 52px; border-radius: 13px; }

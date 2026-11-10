@@ -523,3 +523,54 @@ h3 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); }
 .brand-name small { font-size: 0.68rem; letter-spacing: 0.22em; color: var(--accent-soft); font-weight: 600; text-transform: uppercase; }
 .foot-grid .foot-brand { margin-bottom: 18px; }
 .foot-grid .foot-brand img { width: 52px; height: 52px; border-radius: 13px; }
+
+/* ---------- sports ---------- */
+.card.sport { text-decoration: none; color: inherit; display: block; }
+.card.sport:hover { border-color: var(--accent); transform: translateY(-3px); }
+.card.sport .status { position: absolute; top: 26px; right: 24px; font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78rem; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--slate); color: var(--silver); }
+.card.sport .status.live { background: rgba(124, 77, 255, 0.16); border-color: var(--accent); color: var(--accent-soft); }
+.card.sport.soon { opacity: 0.72; box-shadow: none; }
+.card.sport.soon .icon { background: rgba(255, 255, 255, 0.05); color: var(--silver); }
+.soon-pill { font-family: var(--display); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid var(--slate); border-radius: 999px; padding: 0 6px; margin-left: 4px; color: var(--silver); }
+.sport-hero .split { align-items: center; }
+.sport-hero .split-media { margin-top: 20px; }
+@media (max-width: 860px) { .sport-hero .split-media { margin-top: 50px; } }
+
+/* ---------- compare tables ---------- */
+.compare { max-width: 900px; margin: 0 auto; border: 1px solid var(--slate); border-radius: var(--radius); overflow: hidden; background: var(--steel); box-shadow: var(--glow); }
+.compare table { width: 100%; border-collapse: collapse; font-size: 0.98rem; }
+.compare th, .compare td { padding: 14px 18px; text-align: left; border-top: 1px solid var(--slate); color: var(--mist); vertical-align: top; }
+.compare thead th { border-top: 0; font-family: var(--display); text-transform: uppercase; letter-spacing: 0.08em; font-size: 1.1rem; color: #fff; background: rgba(124, 77, 255, 0.08); }
+.compare thead th small { display: block; font-size: 0.75rem; color: var(--accent-soft); letter-spacing: 0.06em; }
+.compare td:nth-child(2), .compare td:nth-child(3), .compare thead th:nth-child(2), .compare thead th:nth-child(3) { width: 26%; }
+.compare tr.grp th { font-family: var(--display); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.9rem; color: var(--accent); background: rgba(255, 255, 255, 0.02); padding: 10px 18px; }
+.compare .yes { color: var(--accent); font-weight: 800; font-size: 1.15rem; }
+.compare .no { color: var(--silver); }
+.compare.points { max-width: 640px; }
+.compare.points td:last-child { text-align: right; font-family: var(--display); font-weight: 700; font-size: 1.15rem; color: #fff; width: 40%; }
+@media (max-width: 620px) { .compare th, .compare td { padding: 11px 12px; font-size: 0.9rem; } }
+
+/* ---------- help hub and guide pages ---------- */
+.help-hub { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.card.help-card { display: grid; grid-template-columns: 150px 1fr; gap: 26px; text-decoration: none; color: inherit; align-items: start; }
+.help-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.help-card .phone { width: 150px; border-radius: 24px; padding: 5px; }
+.help-card .phone img { border-radius: 20px; }
+.help-card .icon { margin-bottom: 14px; }
+.help-card ul { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 4px; font-size: 0.92rem; color: var(--silver); }
+.help-card li::before { content: '\2192  '; color: var(--accent); }
+@media (max-width: 960px) { .help-hub { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .card.help-card { grid-template-columns: 1fr; } .help-card .hc-shot { display: none; } }
+.crumb { font-size: 0.95rem; color: var(--silver); margin-bottom: 14px; }
+.crumb a { color: var(--accent); text-decoration: none; }
+.toc-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.toc-pills a, .other-guides a { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.92rem; text-decoration: none; color: var(--mist); border: 1px solid var(--slate); border-radius: 999px; padding: 6px 14px; background: var(--steel); }
+.toc-pills a:hover, .other-guides a:hover { border-color: var(--accent); color: #fff; }
+.other-guides { display: flex; flex-wrap: wrap; gap: 8px; }
+.guides-shot { max-width: 1040px; }
+.guide.shot { display: grid; grid-template-columns: 1fr 280px; gap: clamp(28px, 5vw, 70px); align-items: start; scroll-margin-top: 100px; }
+.guide.shot { margin-bottom: 26px; }
+.guide.shot .g-shot { position: sticky; top: 100px; }
+.guide.shot .phone { width: 100%; }
+.guides-shot .compare { margin-top: 70px; }
+@media (max-width: 860px) { .guide.shot { grid-template-columns: 1fr; } .guide.shot .g-shot { position: static; max-width: 260px; margin: 0 auto; order: -1; } }
